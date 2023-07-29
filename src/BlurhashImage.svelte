@@ -23,9 +23,9 @@
   {#if hasBeenVisible}
     <div style="position: relative">
       {#if !isFadeIn}
-        <Blurhash {hash} {width} {height} />
+        <Blurhash {hash} {width} {height} {...$$restProps} />
       {:else}
-        <div style="width: {width}px;height: {height}px" />
+        <div style="width: {width}px;height: {height}px" {...$$restProps} />
       {/if}
 
       <Image
@@ -35,6 +35,7 @@
         {width}
         {height}
         {fadeDuration}
+        {...$$restProps}
       />
     </div>
   {/if}
