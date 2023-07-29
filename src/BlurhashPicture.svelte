@@ -37,6 +37,7 @@
           {width}
           {height}
           {fadeDuration}
+          {...$$restProps}
         />
       </picture>
     </div>
