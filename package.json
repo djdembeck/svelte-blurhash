@@ -13,7 +13,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.3",
